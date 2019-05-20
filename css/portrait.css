@@ -1,0 +1,38 @@
+#portrait_container {
+	top: 0px;
+	/*left: 50%;*/
+}
+
+#portrait_container img {
+	position: absolute;
+	width: 125px;
+	top: 285px;
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: 3;
+}
+
+#circle {
+    height: 195px;
+    width: 195px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 272.5px;  
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+#circle2 {
+height: 215px;
+    width: 215px;
+    background-color: green;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    top: 262.5px;
+    transform: translateX(-50%);
+/*    border-top-color: orange;*/
+    z-index: 1;
+}

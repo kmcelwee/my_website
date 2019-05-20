@@ -1,0 +1,255 @@
+/*
+font-family: 'Alfa Slab One', cursive;
+font-family: 'Open Sans', sans-serif;
+*/
+
+* {
+	--color_scheme: green;
+	--color_scheme2: white;
+}
+
+/*#004445*/
+
+* {
+	font-family: 'Alfa Slab One', cursive;
+	margin: 0px;
+}
+
+header { 
+	position: relative;
+	height: 370px; 
+	width: 100%;
+	background: var(--color_scheme);
+	text-align: center;
+	margin: 0;
+}
+
+#header_content {
+	position: absolute;
+	top: 40%;
+	width: 100%;
+	transform: translateY(-50%);
+}
+
+#title {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 55px;
+	letter-spacing: 15px;
+	color: var(--color_scheme2);
+}
+
+#subtitle {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 25px;
+	letter-spacing: 2px;
+	color: var(--color_scheme2);
+}
+
+#resume {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-family: 'Open Sans', sans-serif;
+	text-align: right;
+	color: var(--color_scheme2);
+	padding: 10px;
+}
+
+#resume::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--color_scheme2);
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+
+#resume:hover::before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.box {
+	position: relative;
+	margin: 10px;
+	height: 250px;
+	width: 250px;
+	display: inline-block;
+}
+
+h1 {
+	text-align: center;
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 50px;
+	letter-spacing: 7px;
+	color: var(--color_scheme);
+}
+
+#projects_header {
+	background: var(--color_scheme);
+	
+}
+
+#projects_header_content {
+	transform: translateY(20%);
+}
+
+#projects_header h1 {
+	color: var(--color_scheme2);
+}
+
+#box_about {
+	position: sticky;
+	top: 10px;
+	background: var(--color_scheme2);
+	width: 0px;
+	float: right;
+	transition: width .2s;
+	overflow: hidden;
+}
+
+#box_container {
+	display: inline-block;
+	width: 85%;
+}
+
+#project_boxes {
+	text-align: center;
+	transition: width .2s;
+	width: 100%;
+}
+
+.blurb {
+	display: inline-block;
+	/*padding: 25px;*/
+	padding-left: 25px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin: 20px;
+	min-width: 500px;
+	max-width: 500px;
+	border-left: 10px solid var(--color_scheme2);
+}
+
+.blurb_title {
+	font-family: 'Alfa Slab One', cursive;
+	color: black;
+	font-size: 40px;
+	margin-bottom: .5em;
+}
+
+.blurb_subtitle {
+	font-family: 'Alfa Slab One', cursive;
+	font-size: 20px;
+	margin-bottom: .6em;
+	color: #444;
+}
+
+.blurb_info, p {
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	margin-bottom: .6em
+}
+
+.blurb_info li {
+	font-family: 'Open Sans', sans-serif;
+	color: black;
+	margin-bottom: .6em
+}
+
+#motivation {
+	display: relative;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 150px;
+	margin-bottom: 100px;
+	/*margin: 150px auto;*/
+    width: 75%;
+	max-width: 600px;
+}
+
+#motivation p {
+	line-height: 1.6em;
+}
+
+.in_progress {
+	font-size: 1.5em;
+	line-height: 1.6em;
+	/*line-height: 175px;*/
+}
+
+
+#hidden {
+	visibility: hidden;
+	display: none;
+}
+
+#filter {
+	width: 100%;
+	height: 10px;
+	text-align: center;
+	margin: 0 auto;
+	height: 150px;
+}
+
+#filter li {
+	font-family: 'Open Sans', sans-serif;
+	letter-spacing: .1em;
+	list-style-type: none;
+	display: inline-block;
+	padding: 7px 15px;
+	margin: 3px;
+	background: var(--color_scheme);
+	color: var(--color_scheme2);
+	border: 1px solid var(--color_scheme);
+	/*transition: opacity;*/
+}
+
+.date {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	margin-bottom: .6em
+}
+
+#projects {
+	min-height: 100vh;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+a {
+	color: inherit;
+}
+
+#filter li:hover {
+	/*opacity: .5;*/
+	background: var(--color_scheme2);
+	color: var(--color_scheme);
+}
+
+.filter_active {
+	background-color: var(--color_scheme2) !important; 
+	color: var(--color_scheme) !important;
+}
+
+footer {
+	font-family: 'Open Sans', sans-serif;
+	height: 35px;
+	width: 100%;
+	background: var(--color_scheme);
+	color: var(--color_scheme2);
+	padding: 25px 0px;
+	text-align: center;
+}
+
+.box_clicked {
+	opacity: .6;
+}

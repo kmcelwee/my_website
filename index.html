@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Kevin McElwee</title>
+	<!-- css -->
+	<link rel="stylesheet" href="css/twitter.css">
+	<link rel="stylesheet" href="css/lgbt.css">
+	<link rel="stylesheet" href="css/tony.css">
+	<link rel="stylesheet" href="css/wiki.css">
+	<link rel="stylesheet" href="css/tsp.css">
+	<link rel="stylesheet" href="css/load_forecast.css">
+	<link rel="stylesheet" href="css/weakest_link.css">
+	<link rel="stylesheet" href="css/house_expenses.css">
+	<link rel="stylesheet" href="css/wpw.css">
+	<link rel="stylesheet" href="css/words.css">
+	<link rel="stylesheet" href="css/stravinsky.css">
+	<link rel="stylesheet" href="css/multiplication.css">
+	<link rel="stylesheet" href="css/mueller.css">
+	<link rel="stylesheet" href="css/scrabble.css">
+	<link rel="stylesheet" href="css/alumni.css">
+	<link rel="stylesheet" href="css/writing.css">
+	<link rel="stylesheet" href="css/moscow.css">
+	<link rel="stylesheet" href="css/help.css">
+	<link rel="stylesheet" href="css/portrait.css">
+	<link rel="stylesheet" href="main.css">
+	<!-- fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="js/main.js"></script>
+</head>
+<body>
+	<header>
+		<div id="header_content">
+			<div id="title">Kevin McElwee</div>
+			<div id="subtitle">Machine Learning Engineer | Data essayist</div>
+		</div>
+		<a target="_blank" href="https://drive.google.com/drive/folders/1_aseFUroM_PPCCELJ-l_39r7vJ6JcVMY"><div id="resume">Resume & Contact</div></a>
+
+		
+	</header>
+	<div id="portrait_container">
+		<img src="img/portrait/self_portrait.svg" alt="">
+		<div id="circle"></div>
+		<div id="circle2"></div>
+	</div>
+	<div id="motivation">
+		<h1>Hello there!</h1>
+		<p>Since first using statistics to uncover trends in medieval music, I have committed myself to finding novel and creative ways to use data. My research includes Scrabble analysis and pizzeria proximity &mdash; there's rarely a topic I find too trivial for rigorous study.</p>
+
+		<p>With a passion for public service, I have also built many tools to provide government oversight and visualize complicated issues. I am optimistic about the possibilities of applied mathematics, particularly machine learning, to inform debate and serve the public good. I currently work full-time building machine learning models that increase efficiency on the electrical grid.</p>
+
+		<p>At university, I studied music and physics, and I have worked as a software engineer, data scientist, and journalist.</p>
+	</div>
+	
+	
+	<div id="projects_header">
+		<div id="projects_header_content">
+			<h1>Projects</h1>
+			<div id="filter">
+				<ul>
+					<li class="filter_active" id="show_all">Show All</li>
+					<li id="ml">Machine Learning</li>
+					<li id="viz">Visualization</li>
+					<li id="analysis">Analysis</li>
+					<li id="journalism">Journalism</li>
+					<li id="math">Research</li>
+					<li id="fun">Fun</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div id="projects">
+	<div id="box_about"></div>
+	<div id="project_boxes">
+		<div id="box_container">
+			<div class="box" id="wpw" tags="journalism analysis math">
+				<div id="wpw_container">
+					<img src="img/wpw_icon.svg" alt="">
+				</div>
+			</div>
+
+			<div class="box" id="house_expenses" tags="viz journalism analysis">
+				<div id="house_expenses_container">
+					<img src="img/congress.svg" alt="">
+				</div>
+			</div>
+
+			<div class="box" id="scrabble" tags="fun journalism analysis ml">
+				<div id="scrabble_container">
+					<img id="tile" src="img/tile.svg" alt="">
+					<img id="tile_q" src="img/tile_q.svg" alt="">
+				</div>
+			</div>
+
+			<div class="box" id="load_forecast" tags="ml math">
+				<div id="load_forecast_container">
+					<img id="tower1" src="img/electricity.png" alt="">
+					<img id="tower2" src="img/electricity.png" alt="">
+					<div id="cloud_e" class="cloud"></div>
+					<div id="cloud_e2" class="cloud"></div>
+					<div id="ground"></div>
+					<div id="sky"></div>
+				</div>
+			</div>
+
+			<div id="tsp" class="box" tags="math ml">
+				<div id="tsp_container">
+					<div id="tsp_sign">TSP</div>
+					<img id="img1" src="img/tsp_img.png" alt="">
+					<img id="img2" src="img/tsp_img.png" alt="">
+				</div>
+			</div>
+
+			<div id="twitter" class="box" tags="fun">
+				<div id="twitter_container">
+					<div class="cloud" id="cloud1"></div>
+					<div class="cloud" id="cloud2"></div>
+					<div class="cloud" id="cloud3"></div>
+					<div id="twitter-bird">
+						<img id="twitter_body" src="img/twitter/twitter_body.png">
+						<img id="twitter_wing_up" src="img/twitter/twitter_wing_up.png">
+						<img id="twitter_wing_down" src="img/twitter/twitter_wing_down.png">
+					</div>
+				</div>
+			</div>
+			
+			<div class="box" id="mueller" tags="journalism viz">
+				<div id="mueller_container">
+					<img id="map" src="img/mueller/mueller.png" alt="">
+					<img id="tooltip1" src="img/mueller/mueller1.png" alt="">
+					<img id="tooltip2" src="img/mueller/mueller2.png" alt="">
+				</div>
+			</div>
+			
+			<div id="lgbt" class="box" tags="analysis viz">
+				<div id="lgbt_container">
+					<img id="home" src="img/lgbt/home.svg" alt="">
+					<div id="lgbt_flag">
+					</div>
+				</div>
+			</div>
+
+			<div id="tony" class="box" tags="analysis fun">
+				<div id="tony_container">
+					<div id="tony_sign">Tony's</div>
+					<div class="tony_sign_subtitle">Restaurant & Pizzeria</div>
+				</div>
+			</div>
+
+			<div id="wiki" class="box" tags="math analysis">
+				<div id="wiki_container">
+					<img id="female" src="img/wiki/female.svg" alt="">
+					<img id="male" src="img/wiki/male.svg" alt="">
+					<img id="globe" src="img/wiki/globe.svg" alt="">
+				</div>
+			</div>
+
+			<div class="box" id="weakest_link" tags="analysis fun math">
+				<div id="weakest_link_container">
+					<img id="link" src="img/weakest_link/link.svg" alt="">
+					<img id="broken_link" src="img/weakest_link/broken_link.svg" alt="">
+				</div>
+			</div>
+
+			<div class="box" id="alumni" tags="journalism analysis">
+				<div id="alumni_container">
+					<img src="img/us_map.svg" alt="">
+				</div>
+
+			</div>
+
+			<div class="box" id="moscow" tags="journalism">
+				<div id="moscow_container">
+					<div id="russian_flag"></div>
+					<img id="nesting_doll" src="img/nesting_doll.svg" alt="">
+				</div>
+			</div>
+
+			<div class="box" id="writing" tags="journalism">
+				<div id="writing_container">
+					<img src="img/atom.svg" alt="">
+				</div>
+			</div>
+
+<!-- 			<div class="box" id="help" tags="journalism">
+				<div id="help_container">Journalism projects I helped with</div>
+			</div> -->
+			<!-- 			<div class="box" id="stravinsky" tags="analysis viz math">
+				<div id="stravinsky_container">Music analysis</div>
+			</div> -->
+<!-- 
+			<div class="box" id="words" tags="fun">
+				<div id="words_container">Fun word game</div>
+			</div> -->
+
+
+		</div>
+
+	<div id="hidden">
+		<div id="twitter_text">
+			<div class="blurb" >
+				<div class="blurb_title">An anti-Twitter Twitter bot.</div>
+				<div class="blurb_subtitle">Follow a bot that repeatedly asks, “Do you want to be on Twitter right now?”</div>
+				<div class="blurb_info">
+					For those that have trouble escaping Twitter’s infinite scroll, this mindfulness bot may be useful. @BotMindfulness is a simple tool that, every 15 minutes, tweets a question for which the answer is rarely yes.
+				</div>
+				<a target="_blank" href="https://twitter.com/BotMindfulness">Follow @BotMindfulness.</a> <br>
+				<a target="_blank" href="https://medium.com/future-vision/i-launched-a-anti-twitter-twitter-bot-52d401da9364">Read more in Future Vision...</a>
+			</div>
+		</div>
+		<div id="lgbt_text">
+			<div class="blurb">
+				<div class="blurb_title">Want LGBT rights? This is where to focus.</div>
+				<div class="blurb_subtitle">Data suggest that progress is most feasible in these key states.</div>
+				<div class="blurb_info">
+					<div class="date">March 22, 2019</div>
+
+					Twenty-nine states allow employers or landlords to discriminate based on sexual orientation or gender identity. While progress at the federal level has halted, many states are prepared to grow LGBT protections. Follow my analysis of polling data and legislature makeup to see where civil rights organizations should focus their resources.
+				</div>
+				<a target="_blank" href="https://medium.com/@kevinrmcelwee/want-lgbt-rights-these-are-the-states-we-should-be-focusing-on-6828fe0c3406">Read more...</a>
+			</div>
+		</div>
+		<div id="tony_text">
+			<div class="blurb">
+				<div class="blurb_title">6 in 10 New Jersey residents live near a “Tony’s” pizza.</div>
+				<div class="blurb_subtitle">And yes, they’re independently owned.</div>
+				<div class="blurb_info">
+					Tying together multiple sources of data, I estimate the number of New Jersey citizens within a 5 mile delivery radius of every Tony's pizzeria.
+
+
+				</div>
+				<a target="_blank" href="https://medium.com/@kevinrmcelwee/6-in-10-new-jersey-residents-live-near-a-tonys-pizza-537073400c2a">Read more...</a>
+			</div>
+		</div>
+		<div id="wiki_text">
+			<div class="blurb">
+				<div class="blurb_title">Guessing gender with Wikipedia</div>
+				<div class="blurb_subtitle">If you’re trying to add a male/female column to a spreadsheet of notable people, Wikipedia may offer a quick fix.</div>
+				<div class="blurb_info">
+				Wikipedia doesn’t include gender in its API, but a simple heuristic may be a quick fix if you’re trying to add a male/female column to a spreadsheet of notable people. Simply counting the number masculine and feminine pronouns in a person’s Wikipedia page seems to be a surprisingly accurate method.</div>
+				<a target="_blank" href="https://medium.com/@kevinrmcelwee/guessing-gender-with-wikipedia-57d6f55910ac">Read more...</a>
+			</div>
+		</div>
+		<div id="mueller_text">
+			<div class="blurb">
+				<div class="blurb_title">Visualizing the Russia investigation’s timeline</div>
+				<div class="blurb_subtitle">A graphic that shows you more than you’ll ever need to know about the Mueller investigation.</div>
+				<div class="date">April 25, 2019</div>
+				<div class="blurb_info">
+				The PBS NewsHour made a comprehensive spreadsheet of every major event concerning the Russia investigation. Spreadsheets are always straightforward and useful; however, after years of data, the NewsHour timeline has quickly become difficult to parse. I’ve created a simple tool that helps place all 450+ events onto a single, easy-to-read page.</div>
+				<a target="_blank" href="https://kmcelwee.github.io/russia_viz/">View the graphic</a><br>
+				<a target="_blank" href="https://medium.com/@kevinrmcelwee/visualizing-the-russia-investigations-timeline-c74626f20aa4">Read more...</a>
+			</div>
+		</div>
+		<div id="tsp_text">
+			<div class="blurb">
+				<div class="blurb_title">A traveling salesperson heuristic in NlogN time</div>
+				<div class="blurb_subtitle">By repurposing a common machine learning algorithm, we can get a fast solution to a notoriously difficult problem.</div>
+				<div class="blurb_info"></div>
+				<a target="_blank" href="https://medium.com/@kevinrmcelwee/a-traveling-salesperson-heuristic-in-nlogn-time-5201bcd347e6">Read more...</a>
+			</div>
+		</div>
+		<div id="load_forecast_text">
+			<div class="blurb">
+				<div class="blurb_title">Using neural nets to predict tomorrow’s electric consumption</div>
+				<div class="blurb_subtitle">The smallest error can lose utilities thousands of dollars in a single day. Neural networks can help make sure that doesn’t happen.</div>
+				<div class="blurb_info">
+				Advances in deep learning can offer utilities an incredibly accurate picture of the next day’s energy consumption. The Open Modeling Framework (OMF) and I have used neural networks to create a day-ahead load forecasting model that can be easily implemented to inform dispatch decisions.</div>
+				<a target="_blank" href="https://towardsdatascience.com/using-neural-nets-to-predict-tomorrows-electric-consumption-cc1ae3ae7cc2">Read more in Towards Data Science...</a>
+			</div>
+		</div>
+		<div id="weakest_link_text">
+			<div class="blurb">
+				<div class="blurb_title">The optimal strategy when playing The Weakest Link</div>
+				<div class="blurb_subtitle">The Weakest Link, a British TV quiz show, ran its last episode in 2017. Did players miss their chance to make the most money possible?</div>
+				<div class="blurb_info">
+				What is the game show's optimal stopping strategy? Should players hedge their bets after reaching £500? £4000? What if they have low accuracy? A Monte Carlo simulation allowed me to calculate average earnings when comparing stopping strategy to percent accuracy.</div>
+				<a target="_blank" href="https://towardsdatascience.com/using-neural-nets-to-predict-tomorrows-electric-consumption-cc1ae3ae7cc2">Read more...</a>
+			</div>
+		</div>
+		<div id="house_expenses_text">
+			<div class="blurb">
+				<div class="blurb_title">A tool to monitor the House's spending habits</div>
+				<div class="date">(Project in progress)</div>
+				<div class="blurb_subtitle">Use this database to calculate quarterly turnover, suspicious activity, and other administrative trends from the members of the House with this database.</div>
+				<div class="blurb_info">
+					This website breaks down the House Expenditure data from the Sunlight Foundation and ProPublica. It's easy to compare different representatives' administrative habits, scan through their spending summaries, and sort their detailed expenses.
+				</div>
+				<a target="_blank" href="https://kmcelwee.github.io/house_expenditures/">Go to the database.</a>
+			</div>
+		</div>
+		<div id="wpw_text">
+			<div class="blurb">
+				<div class="blurb_title">Where to pitch, based on data from the website, Who Pays Writers?</div>
+				<div class="blurb_subtitle">In partnership with the Columbia Journalism Review.</div>
+				<div class="blurb_info">
+					The website <a target="_blank" href="http://whopayswriters.com/#/results">WhoPaysWriters.com</a> was founded in 2012 as a public, anonymous forum for freelancers to share their experiences working for publications. An analysis of the site's data confirmed some of our presumptions about freelancing: it can be hard to make a living simply writing. But it also revealed that pay is going up at a greater rate than inflation, that the publications with the biggest names don’t always treat their freelancers the best, and that contracts, in a multi-platform era, are getting a lot more complex.
+				</div>
+				<a target="_blank" href="https://www.cjr.org/business_of_news/where-to-pitch-data-who-pays-writers.php">Read the full article in the Columbia Journalism Review...</a>
+			</div>
+		</div>
+		<div id="scrabble_text">
+			<div class="blurb">
+				<div class="blurb_title">Does Scrabble Need To Be Fixed?</div>
+				<div class="blurb_subtitle">An experiment in controlling how much of Scrabble is luck.</div>
+				<div class="blurb_info">
+					<p>
+					Joshua Lewis, a Ph.D. candidate at the University of California, San Diego, conducted a statistical study to show that there are "lucky" tiles in Scrabble, and suggested updated values. I conducted my own tests to see if Lewis’ values really make Scrabble more fair in practice. In short, they don't.
+					</p>
+				</div>
+				<a target="_blank" href="http://nautil.us/issue/67/reboot/does-scrabble-need-to-be-fixed">Read the full article in Nautilus Magazine...</a>
+			</div>
+		</div>
+		<div id="alumni_text">
+			<div class="blurb">
+				<div class="blurb_title">Tracking migration of Princeton University alumni</div>
+				<div class="blurb_subtitle">Though conflicted, small-town University students are fleeing to cities</div>
+				<div class="date">January 26, 2018</div>
+				<div class="blurb_info">
+					<p>
+					Each year, the University enrolls around five or six students from Kansas, four or five from Kentucky, and three or four from Idaho. However, five years after graduation, no one from the Class of 2012 has returned to any of those states. Nearly a quarter of the Class of 2012 is living in New York City.
+					</p>
+				</div>
+				<a target="_blank" href="http://www.dailyprincetonian.com/article/2018/01/though-conflicted-numbers-show-students-fleeing-to-cities">Read the full article in The Daily Princetonian...</a>
+			</div>
+		</div>
+		<div id="moscow_text">
+			<div class="blurb">
+				<div class="blurb_title">Reporting from Moscow</div>
+				<div class="blurb_subtitle">The Kremlin and opposition leaders are vying for Russia’s youth vote</div>
+				<div class="date">December 6, 2017</div>
+				<div class="blurb_info">
+					<p>Four waves of protest — in March, June, October and November of 2017 — brought thousands of Russians into the streets to oppose Russian President Vladimir Putin and a corrupt Russian government. The citizens fueling these protests? Mostly young people.</p>
+				</div>
+				<a target="_blank" href="http://www.dailyprincetonian.com/article/2018/01/though-conflicted-numbers-show-students-fleeing-to-cities">Read the full article in The GroundTruth Project...</a>
+				<br><br><hr><br>
+				<div class="blurb_subtitle">Where are the US and Russia finding common ground? Low Earth Orbit</div>
+				<div class="date">August 17, 2017</div>
+				<div class="blurb_info">
+					<p>Americans and Russians working on the International Space Station tend to turn a blind eye to terrestrial snafus that divide their respective countries.</p>
+				<a target="_blank" href="https://thegroundtruthproject.org/us-russia-finding-common-ground-low-earth-orbit/">Read the full article in The GroundTruth Project...</a>
+				</div>
+			</div>
+		</div>
+		<div id="help_text">
+			<div class="blurb">
+				<div class="blurb_title">Stories I helped write</div>
+				<div class="blurb_subtitle">Let's pretend my support was incredibly influential.</div>
+				<div class="blurb_info">
+					<ul>
+						<li><p><a target="_blank" href="https://www.newyorker.com/magazine/2018/06/18/skam-the-radical-teen-drama-that-unfolds-one-post-at-a-time">“SKAM,” the Radical Teen Drama That Unfolds One Post at a Time</a>, by DT Max, The New Yorker, June 2018.</p></li>
+						<li><a target="_blank" href="https://www.newyorker.com/magazine/2017/12/18/jim-simons-the-numbers-king">Jim Simons, the Numbers King</a>, by DT Max, The New Yorker, Dec 2017.</li>
+						<li><a target="_blank" href="https://thegroundtruthproject.org/charlottesville-attack-americas-state-emergency/">The Charlottesville attack and America’s state of emergency</a> by Kevin Grant, The GroundTruth Project, Aug 2017.</li>
+						<li><a target="_blank" href="https://www.nytimes.com/2017/07/18/world/europe/russia-fidget-spinner-plot.html">The Devious Plot to ‘Zombify’ Russia: The Fidget Spinner</a> by Neil MacFarquar, The New York Times, July 2017.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<div id="writing_text">
+			<div class="blurb">
+				<div class="blurb_title">Exploring science and tech</div>
+				<div class="blurb_subtitle">Select stories from my time at Princeton as a science writer.</div>
+				<div class="blurb_info">
+					<ul>
+						<li><a target="_blank" href="https://discovery.princeton.edu/2018/12/02/fact-checking-immigration-professor-leah-boustan-uses-big-data-to-explore-myths-about-the-past/">Fact-checking Immigration: Professor Leah Boustan uses big data to explore myths about the past</a>, Discovery Magazine, Dec 2018.</li>
+						<li><a target="_blank" href="https://discovery.princeton.edu/2018/12/02/from-math-to-meaning-artificial-intelligence-blends-algorithms-and-applications/">From Math to Meaning. Artificial intelligence blends algorithms and applications</a>, Discovery Magazine, Dec 2018. (Cover Story)</li>
+						<li><a target="_blank" href="https://www.cjr.org/innovations/tinder-journalism.php">Dating app Tinder can be a tool for journalists</a>, Columbia Journalism Review, Sept 2017.</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+	</div>
+	</div>
+	<footer>
+		Inquiries? Suggestions? Coffee? Don't hesitate to reach out. <a target="_blank" href="https://drive.google.com/drive/folders/1_aseFUroM_PPCCELJ-l_39r7vJ6JcVMY"><p  style="color: white;">Resume & Contact</p></a>
+	</footer>
+</body>
+</html>
