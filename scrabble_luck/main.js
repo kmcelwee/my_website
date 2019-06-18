@@ -5,7 +5,7 @@ function percDif(a, b) {
 }
 
 var d;
-$.getJSON("score_calc.json", function(json) {
+$.getJSON("http://www.kevinrmcelwee.ml/scrabble_luck/score_calc.json", function(json) {
     d = json;
 });
 
@@ -71,11 +71,16 @@ function updateBar(player1_wins, player2_wins) {
   $('#p1').css({'width': one_perc + '%'});
   $('#p2').css({'width': two_perc + '%'});
 
+  $('#qe').html(unc.toFixed(2) + ' %');
+  $('#p1e').html(one_perc.toFixed(2) + ' %');
+  $('#p2e').html(two_perc.toFixed(2) + ' %');
+
   // $('#q').css({'width': '75%'});
   // $('#p1').css({'width': '15%'});
   // $('#p2').css({'width': '20%'});
 
-  $('#bar').css({'opacity': 1, 'height': '100px'})
+  $('#bar').css({'visibility': 'visible'})
+  $('#bar').css({'opacity': 1, 'height': '300px'})
 }
 
 function addGame() {

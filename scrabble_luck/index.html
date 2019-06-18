@@ -6,12 +6,16 @@
   <link rel="stylesheet" href="main.css">
   <link rel="stylesheet" href="letters.css">
   <!-- <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> -->
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
-  <script src="jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="main.js"></script>
 </head>
 <body>
   <header>
+    <div class="go_back_container">
+      <div class="go_back">
+        <a href="../index.html" target="_blank">← Other fun stuff</a>
+      </div>
+    </div>
     <div id="title">
       <!-- <h1> -->
         <span class="let_container"><span class="let" tile_value="1" id="l0">S</span></span>
@@ -23,7 +27,7 @@
         <span class="let_container"><span class="let" tile_value="1" id="l6">L</span></span>
         <span class="let_container"><span class="let" tile_value="1" id="l7">E</span></span>
         <div id="subtitle">
-          Luck calculator
+          Luck Calculator
         </div>
       <!-- </h1> -->
     </div>
@@ -32,18 +36,32 @@
   <div id="explanation_container">
     <div id="explanation">
       <h2>Did you really win or were you just lucky?</h2>
-      <p>By looking at how computers play Scrabble against each other, we can see how much chance exists in the beloved board game. Drawing from thousands of Scrabble games played on the Quackle software, the calculator below can calculate the probability that one player is better than the other. For details, read more in Nautilus Magazine <a href="http://nautil.us/issue/67/reboot/does-scrabble-need-to-be-fixed" target="_blank">here</a>.</p>
+      <p>By looking at how computers play Scrabble against each other, we can see how much luck exists in the beloved board game. Drawing from thousands of Scrabble games played on the <a href="http://people.csail.mit.edu/jasonkb/quackle/" target="_blank">Quackle software</a>, the calculator below can approximate which player is better than the other. For details, read more in Nautilus Magazine <a href="http://nautil.us/issue/67/reboot/does-scrabble-need-to-be-fixed" target="_blank">here</a>.</p>
    </div>
  </div>
  <div id="bar">
-  <table style="width: 100%">
+  <table id="bar_table">
     <tr>
       <td id="p1"></td>
       <td id="q"></td>
       <td id="p2"></td>
     </tr>
   </table>
-  </div>
+
+  <h1 id="table_title">Confidence Breakdown</h1>
+  <table id="breakdown_table">
+    <tr>
+      <td style="border-bottom: 2px solid blue;">Player 1 is better</td>
+      <td style="border-bottom: 2px solid grey;">Uncertainty (50/50 toss up)</td>
+      <td style="border-bottom: 2px solid red;">Player 2 is better</td>
+    </tr>
+    <tr>
+      <td id="p1e"></td>
+      <td id="qe"></td>
+      <td id="p2e"></td>
+    </tr>
+  </table>
+</div>
  
   <div id="tool">
     <div id="score_input">
@@ -55,14 +73,14 @@
           <td style="border-bottom: 2px solid black;">Winner Confidence</td>
         </tr>
         <tr id="row_1">
-          <td><input type="number" id="player1_1" min="0" step="1" required></td>
-          <td><input type="number" id="player2_1" min="0" step="1" required></td>
+          <td><input type="number" id="player1_1" min="0" step="1" value="300" required></td>
+          <td><input type="number" id="player2_1" min="0" step="1" value="250" required></td>
           <td id="percDiff_1"></td>
           <td id="confidence_1"></td>
         </tr>
         <tr id="row_2">
-          <td><input type="number" id="player1_2" min="0" step="1" required></td>
-          <td><input type="number" id="player2_2" min="0" step="1" required></td>
+          <td><input type="number" id="player1_2" min="0" step="1" value="250" required></td>
+          <td><input type="number" id="player2_2" min="0" step="1" value="275" required></td>
           <td id="percDiff_2"></td>
           <td id="confidence_2"></td>
         </tr>
@@ -85,7 +103,7 @@
   
 
   <footer>
-    <p>Created by Kevin McElwee. Check out more data projects on <a href="http://www.kevinrmcelwee.ml/" target="_blank">my website</a>.</p>
+    <!-- <p>Created by Kevin McElwee. Check out more data projects on <a href="http://www.kevinrmcelwee.ml/" target="_blank">my website</a>.</p> -->
   </footer>
 </body>
 </html>
