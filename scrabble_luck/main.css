@@ -1,0 +1,98 @@
+* {
+	margin: 0px;
+	box-sizing: border-box;
+	font-family: 'Oswald', sans-serif;
+	--bc: rgb(37,79,33);
+}
+
+a {
+	color: inherit;
+}
+
+header {
+	position: relative;	
+	height: 300px;
+	width: 100%;
+	background: var(--bc);
+	text-align: center;
+	color: white;
+}
+
+header h1 {
+	position: absolute;
+	bottom: 50%;
+	transform: translateY(-50%);
+}
+
+#explanation_container {
+	margin: 50px;
+}
+
+#explanation {
+	display: block;
+	margin: 30px auto;
+	width: 550px;
+}
+
+footer {
+	background: var(--bc);
+	bottom: 0px;
+	width: 100%;
+	text-align: center;
+	color: white;
+	height: 30px;
+}
+
+#tool {
+	margin: 60px;
+	margin-top: 0px;
+}
+
+#tool td {
+	width: 150px;
+}
+
+h2 {
+	line-height: 2.5em;
+}
+
+#score_input table {
+	text-align: center;
+	margin: 0 auto;
+}
+
+#bar {
+	width: 550px;
+	margin: 0 auto;
+	font-size: 0;
+	height: 0px;
+	opacity: 0;
+	transition: opacity 500ms, height 500ms;
+}
+
+
+
+
+#bar td {	
+	height: 30px;
+	text-align: center;
+	transition: width 500ms;
+}
+
+#bar #q {
+	background: grey;
+	width: 30%;
+}
+#bar #p1 {
+	background: blue;
+	width: 10%;
+}
+
+#bar #p2 {
+	background: red;
+	width: 60%;
+}
+
+#bar td:hover {
+	border: 3px solid black;
+}
