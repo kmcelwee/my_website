@@ -1,7 +1,7 @@
 #tsp_container {
 	overflow: hidden;
 	position: relative;
-	justify-content: center;
+	text-align: center;
 	background: white;
 	border: 10px solid black;
 	height: inherit;
