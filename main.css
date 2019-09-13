@@ -13,6 +13,10 @@ font-family: 'Open Sans', sans-serif;
 	margin: 0px;
 }
 
+ul {
+	padding-inline-start: 0px;
+}
+
 .hr {
 	display: block;
 	width: 75%;
@@ -86,7 +90,7 @@ header {
 
 .box {
 	position: relative;
-	margin: 10px;
+	margin: 15px;
 	height: 250px;
 	width: 250px;
 	display: inline-block;
@@ -197,12 +201,14 @@ h1 {
 }
 
 #projects {
+	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: center;
-	min-height: 100vh;
+	min-height: 300px;
 	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 60px;
+	margin-right: 100px;
 }
 
 a {
@@ -252,7 +258,7 @@ footer {
 	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
-	width: 100%;
+	/*width: 100%;*/
 }
 
 .flex_container div {

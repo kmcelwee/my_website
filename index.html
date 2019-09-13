@@ -39,6 +39,7 @@
 	<link rel="stylesheet" href="css/portrait.css">
 	<link rel="stylesheet" href="css/twitter.css">
 	<link rel="stylesheet" href="css/mp.css">
+	<link rel="stylesheet" href="css/bots.css">
 	<link rel="stylesheet" href="main.css">
 	<!-- fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
@@ -92,12 +93,36 @@
 		</div>
 	</div>
 	<div id="projects">
-		
+		<!-- <div class="flex_container" id="bots_flex_container" tags="journalism viz">
+			<div class="box" id="bots">
+				<div id="bots_container">
+					<img src="img/bots/bot_head.svg" alt="" id="head">
+					<svg id="blink"><circle cx="13" cy="13" r="11.5"/></svg>
+				</div>
+			</div>
+			<div id="bots_blurb" class="outer_blurb">
+				<div id="bots_text" class="outer_blurb">
+					<div class="blurb">
+						<div class="blurb_title">Twitter stats apps misinform tens of thousands of users, including many journalists.</div>
+						<div class="blurb_subtitle">Fake-follower calculators aren’t built to be used on politicians. Of course, that’s what users are doing anyway.</div>
+						<div class="blurb_info">
+							<p>
+								Fake-follower calculators, especially a platform called Twitter Audit, have been cited by a number of news outlets, including <a href="https://www.telegraph.co.uk/news/worldnews/us-election/12152676/Which-presidential-candidate-has-the-most-fake-Twitter-followers.html" target="_blank">The Telegraph</a>, <a target="_blank" href="https://www.vanityfair.com/news/2016/08/trumps-biggest-lie-the-size-of-his-twitter-following">Vanity Fair</a>, and <a target="_blank" href="https://www.cjr.org/the_media_today/trump-twitter-dorsey.php">the Columbia Journalism Review</a>. But these platform’s statistical techniques are far from rigorous for large accounts.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="hr"></div>
+		</div> -->
+
+
 		<div class="flex_container" id="spotify_flex_container" tags="journalism analysis viz">
 			<div class="box" id="spotify">
 				<div id="spotify_container"><img src="img/spotify.png" alt=""></div>
 			</div>
-			<div id="spotify_blurb">
+			<div id="spotify_blurb" class="outer_blurb">
 				<div id="spotify_text">
 					<div class="blurb">
 						<div class="blurb_title">The 2020 candidates on Spotify</div>
@@ -126,7 +151,7 @@
 					<img src="img/wpw_icon.svg" alt="">
 				</div>
 			</div>
-			<div id="wpw_text">
+			<div id="wpw_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Where to pitch, based on data from the website, Who Pays Writers?</div>
 					<div class="blurb_subtitle">In partnership with the Columbia Journalism Review.</div>
@@ -147,7 +172,7 @@
 					<img src="img/congress.svg" alt="">
 				</div>
 			</div>
-			<div id="house_expenses_text">
+			<div id="house_expenses_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">A tool to monitor the House's spending habits</div>
 					<div class="date">(Project in progress)</div>
@@ -173,7 +198,7 @@
 					<img id="tooltip2" src="img/mueller/mueller2.png" alt="">
 				</div>
 			</div>
-			<div id="mueller_text">
+			<div id="mueller_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Visualizing the Russia investigation’s timeline</div>
 					<div class="blurb_subtitle">A graphic that shows you more than you’ll ever need to know about the Mueller investigation.</div>
@@ -197,7 +222,7 @@
 					<img id="mp_image" src="img/mp.png" alt="">
 				</div>
 			</div>
-			<div id="mp_text">
+			<div id="mp_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">An algorithm for multiplicative persistence research.</div>
 					<div class="blurb_subtitle">How we can expand our search limits, orders of magnitude faster than the naïve approach.</div>
@@ -215,7 +240,7 @@
 					<img id="tile_q" src="img/tile_q.svg" alt="">
 				</div>
 			</div>
-			<div id="scrabble_text">
+			<div id="scrabble_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Does Scrabble Need To Be Fixed?</div>
 					<div class="blurb_subtitle">An experiment in controlling how much of Scrabble is luck.</div>
@@ -243,14 +268,13 @@
 					<div id="sky"></div>
 				</div>
 			</div>
-			<div id="load_forecast_text">
+			<div id="load_forecast_text" class="outer_blurb">
 				<div class="blurb">
-					<div class="blurb_title">Using neural nets to predict tomorrow’s electric consumption</div>
-					<div class="blurb_subtitle">The smallest error can lose utilities thousands of dollars in a single day. Neural networks can help make sure that doesn’t happen.</div>
+					<div class="blurb_title">Using neural nets to make the electrical grid more efficient</div>
+					<div class="blurb_subtitle">The smallest error can lose utilities thousands of dollars in a single day. Deep learning can help make sure that doesn’t happen.</div>
 					<div class="blurb_info">
-						<p>
-					Advances in deep learning can offer utilities an incredibly accurate picture of the next day’s energy consumption. The Open Modeling Framework (OMF) and I have used neural networks to create a day-ahead load forecasting model that can be easily implemented to inform dispatch decisions.</p>
-					<a target="_blank" href="https://towardsdatascience.com/using-neural-nets-to-predict-tomorrows-electric-consumption-cc1ae3ae7cc2">Read more in Towards Data Science...</a>
+						<p>I've developed a three-part guide to peak shaving with neural networks.</p>
+					<a target="_blank" href="https://towardsdatascience.com/an-electric-utilitys-3-part-guide-to-peak-shaving-with-neural-networks-de5c7752d946">Read more in Towards Data Science...</a>
 				</div>
 
 				</div>
@@ -266,7 +290,7 @@
 					<img id="img2" src="img/tsp_img.png" alt="">
 				</div>
 			</div>
-			<div id="tsp_text">
+			<div id="tsp_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">A traveling salesperson heuristic in NlogN time</div>
 					<div class="blurb_subtitle">By repurposing a common machine learning algorithm, we can get a fast solution to a notoriously difficult problem.</div>
@@ -290,9 +314,9 @@
 					</div>
 				</div>
 			</div>
-			<div id="twitter_text">
+			<div id="twitter_text" class="outer_blurb">
 				<div class="blurb" >
-					<div class="blurb_title">Bots to brighten the Twitter hellscape.</div><br>
+					<div class="blurb_title">Bots to brighten the Twitter hellscape.</div>
 					<div class="blurb_subtitle">Mindfulness Bot</div><br>
 					<div class="blurb_info"><p>Follow a bot that repeatedly asks, “Do you want to be on Twitter right now?”</p>
 					<a target="_blank" href="https://twitter.com/BotMindfulness">Follow @BotMindfulness.</a><br>
@@ -318,7 +342,7 @@
 					</div>
 				</div>
 			</div>
-			<div id="lgbt_text">
+			<div id="lgbt_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Want LGBT rights? This is where to focus.</div>
 					<div class="blurb_subtitle">Data suggest that progress is most feasible in these key states.</div>
@@ -340,7 +364,7 @@
 					<div class="tony_sign_subtitle">Restaurant & Pizzeria</div>
 				</div>
 			</div>
-			<div id="tony_text">
+			<div id="tony_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">6 in 10 New Jersey residents live near a “Tony’s” pizza.</div>
 					<div class="blurb_subtitle">And yes, they’re independently owned.</div>
@@ -363,7 +387,7 @@
 					<img id="globe" src="img/wiki/globe.svg" alt="">
 				</div>
 			</div>
-			<div id="wiki_text">
+			<div id="wiki_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Guessing gender with Wikipedia</div>
 					<div class="blurb_subtitle">If you’re trying to add a male/female column to a spreadsheet of notable people, Wikipedia may offer a quick fix.</div>
@@ -382,7 +406,7 @@
 					<img id="broken_link" src="img/weakest_link/broken_link.svg" alt="">
 				</div>
 			</div>
-			<div id="weakest_link_text">
+			<div id="weakest_link_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">The optimal strategy when playing The Weakest Link</div>
 					<div class="blurb_subtitle">The Weakest Link, a British TV quiz show, ran its last episode in 2017. Did players miss their chance to make the most money possible?</div>
@@ -400,7 +424,7 @@
 					<img src="img/us_map.svg" alt="">
 				</div>
 			</div>
-			<div id="alumni_text">
+			<div id="alumni_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Tracking migration of Princeton University alumni</div>
 					<div class="blurb_subtitle">Though conflicted, small-town University students are fleeing to cities</div>
@@ -425,7 +449,7 @@
 					<img id="nesting_doll" src="img/nesting_doll.svg" alt="">
 				</div>
 			</div>
-			<div id="moscow_text">
+			<div id="moscow_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Reporting from Moscow</div>
 					<div class="blurb_subtitle">The Kremlin and opposition leaders are vying for Russia’s youth vote</div>
@@ -452,7 +476,7 @@
 					<img src="img/atom.svg" alt="">
 				</div>
 			</div>
-			<div id="writing_text">
+			<div id="writing_text" class="outer_blurb">
 				<div class="blurb">
 					<div class="blurb_title">Exploring science and tech</div>
 					<div class="blurb_subtitle">Select stories from my time at Princeton as a science writer.</div>
@@ -467,7 +491,7 @@
 			</div>
 		</div>
 	<div id="hidden">
-		<div id="twitter_text">
+		<div id="twitter_text" class="outer_blurb">
 			<div class="blurb" >
 				<div class="blurb_title">Helpful Twitter bots!</div>
 				<div class="blurb_subtitle">Mindfulness Bot</div>
@@ -480,7 +504,7 @@
         <a target="_blank" href="https://medium.com/swlh/how-to-make-a-twitter-cuteness-bot-357987184221">Read more in The Startup...</a>
 			</div>
 		</div>
-		<div id="lgbt_text">
+		<div id="lgbt_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Want LGBT rights? This is where to focus.</div>
 				<div class="blurb_subtitle">Data suggest that progress is most feasible in these key states.</div>
@@ -492,7 +516,7 @@
 				<a target="_blank" href="https://medium.com/@kevinrmcelwee/want-lgbt-rights-these-are-the-states-we-should-be-focusing-on-6828fe0c3406">Read more...</a>
 			</div>
 		</div>
-		<div id="tony_text">
+		<div id="tony_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">6 in 10 New Jersey residents live near a “Tony’s” pizza.</div>
 				<div class="blurb_subtitle">And yes, they’re independently owned.</div>
@@ -504,7 +528,7 @@
 				<a target="_blank" href="https://medium.com/@kevinrmcelwee/6-in-10-new-jersey-residents-live-near-a-tonys-pizza-537073400c2a">Read more...</a>
 			</div>
 		</div>
-		<div id="wiki_text">
+		<div id="wiki_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Guessing gender with Wikipedia</div>
 				<div class="blurb_subtitle">If you’re trying to add a male/female column to a spreadsheet of notable people, Wikipedia may offer a quick fix.</div>
@@ -513,7 +537,7 @@
 				<a target="_blank" href="https://medium.com/@kevinrmcelwee/guessing-gender-with-wikipedia-57d6f55910ac">Read more...</a>
 			</div>
 		</div>
-		<div id="mueller_text">
+		<div id="mueller_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Visualizing the Russia investigation’s timeline</div>
 				<div class="blurb_subtitle">A graphic that shows you more than you’ll ever need to know about the Mueller investigation.</div>
@@ -525,7 +549,7 @@
 				<a target="_blank" href="https://medium.com/@kevinrmcelwee/visualizing-the-russia-investigations-timeline-c74626f20aa4">Read more...</a>
 			</div>
 		</div>
-		<div id="mp_text">
+		<div id="mp_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">An algorithm for multiplicative persistence research.</div>
 				<div class="blurb_subtitle">How we can expand our search limits, orders of magnitude faster than the naïve approach.</div>
@@ -533,14 +557,14 @@
 				<a target="_blank" href="https://medium.com/@kevinrmcelwee/multiplicative-persistence-is-solved-1937692b26cc">Read more...</a>
 			</div>
 		</div>
-		<div id="tsp_text">
+		<div id="tsp_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">A traveling salesperson heuristic in NlogN time</div>
 				<div class="blurb_subtitle">By repurposing a common machine learning algorithm, we can get a fast solution to a notoriously difficult problem.</div>
 				<div class="blurb_info"><a target="_blank" href="https://medium.com/@kevinrmcelwee/a-traveling-salesperson-heuristic-in-nlogn-time-5201bcd347e6">Read more...</a></div>
 			</div>
 		</div>
-		<div id="load_forecast_text">
+		<div id="load_forecast_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Using neural nets to predict tomorrow’s electric consumption</div>
 				<div class="blurb_subtitle">The smallest error can lose utilities thousands of dollars in a single day. Neural networks can help make sure that doesn’t happen.</div>
@@ -549,7 +573,7 @@
 				<a target="_blank" href="https://towardsdatascience.com/an-electric-utilitys-3-part-guide-to-peak-shaving-with-neural-networks-de5c7752d946">Read more in Towards Data Science...</a>
 			</div>
 		</div>
-		<div id="weakest_link_text">
+		<div id="weakest_link_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">The optimal strategy when playing The Weakest Link</div>
 				<div class="blurb_subtitle">The Weakest Link, a British TV quiz show, ran its last episode in 2017. Did players miss their chance to make the most money possible?</div>
@@ -558,7 +582,7 @@
 				<a target="_blank" href="https://medium.com/@kevinrmcelwee/the-optimal-strategy-in-the-weakest-link-faa58defa9e4">Read more...</a>
 			</div>
 		</div>
-		<div id="house_expenses_text">
+		<div id="house_expenses_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">A tool to monitor the House's spending habits</div>
 				<div class="date">(Project in progress)</div>
@@ -570,7 +594,7 @@
 				<a target="_blank" href="https://kmcelwee.github.io/house_expenditures/">Go to the database.</a>
 			</div>
 		</div>
-		<div id="wpw_text">
+		<div id="wpw_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Where to pitch, based on data from the website, Who Pays Writers?</div>
 				<div class="blurb_subtitle">In partnership with the Columbia Journalism Review.</div>
@@ -580,7 +604,7 @@
 				<a target="_blank" href="https://www.cjr.org/business_of_news/where-to-pitch-data-who-pays-writers.php">Read the full article in the Columbia Journalism Review...</a>
 			</div>
 		</div>
-		<div id="scrabble_text">
+		<div id="scrabble_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Does Scrabble Need To Be Fixed?</div>
 				<div class="blurb_subtitle">An experiment in controlling how much of Scrabble is luck.</div>
@@ -594,7 +618,7 @@
 				<a target="_blank" href="http://www.kevinrmcelwee.ml/scrabble_luck/">Check out my Scrabble luck calculator.</a>
 			</div>
 		</div>
-		<div id="alumni_text">
+		<div id="alumni_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Tracking migration of Princeton University alumni</div>
 				<div class="blurb_subtitle">Though conflicted, small-town University students are fleeing to cities</div>
@@ -608,7 +632,7 @@
 				<a target="_blank" href="http://www.dailyprincetonian.com/article/2018/01/though-conflicted-numbers-show-students-fleeing-to-cities">Read the full article in The Daily Princetonian...</a>
 			</div>
 		</div>
-		<div id="moscow_text">
+		<div id="moscow_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Reporting from Moscow</div>
 				<div class="blurb_subtitle">The Kremlin and opposition leaders are vying for Russia’s youth vote</div>
@@ -628,7 +652,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="help_text">
+		<div id="help_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Stories I helped write</div>
 				<div class="blurb_subtitle">Let's pretend my support was incredibly influential.</div>
@@ -642,7 +666,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="writing_text">
+		<div id="writing_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">Exploring science and tech</div>
 				<div class="blurb_subtitle">Select stories from my time at Princeton as a science writer.</div>
@@ -655,7 +679,7 @@
 				</div>
 			</div>
 		</div>
-		<div id="spotify_text">
+		<div id="spotify_text" class="outer_blurb">
 			<div class="blurb">
 				<div class="blurb_title">The 2020 candidates on Spotify</div>
 				<div class="blurb_subtitle">What can Spotify data tell us about how some presidential campaigns are targeting voters?</div>
