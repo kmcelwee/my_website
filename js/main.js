@@ -29,7 +29,6 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop: $(where_to).offset().top - 20}, 500); //$(window).height()*.25
 	});
 
-
 	// colons ------------------------------------
 	var colon_titles;
 	var change_me = $('#updating_colon_title');
@@ -41,7 +40,6 @@ $(document).ready(function() {
 		change_me.text(colon_titles[parseInt(Math.random()*1000)])
 	});
 	// -------------------------------------------
-
 });
 
 
