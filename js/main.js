@@ -29,6 +29,19 @@ $(document).ready(function() {
 		$('html, body').animate({scrollTop: $(where_to).offset().top - 20}, 500); //$(window).height()*.25
 	});
 
+
+	// colons ------------------------------------
+	var colon_titles;
+	var change_me = $('#updating_colon_title');
+	$.getJSON("https://kmcelwee.github.io/mediumBlog/some_colon_titles.json", function(data) {
+		colon_titles = data['t'];
+		change_me.text(colon_titles[parseInt(Math.random()*1000)])
+	});
+	$('#colon_container').hover(function() {
+		change_me.text(colon_titles[parseInt(Math.random()*1000)])
+	});
+	// -------------------------------------------
+
 });
 
 
