@@ -276,6 +276,12 @@ footer {
 	display: inline-block;
 }
 
+.tools_used {
+	font-family: 'Open Sans', sans-serif;
+	font-style: italic;
+	margin-bottom: 1em;
+}
+
 #llc {
 	font-family: Courier;
 }
