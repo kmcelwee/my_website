@@ -88,12 +88,17 @@ header {
   transform: scaleX(1);
 }
 
+.filters {
+	cursor: pointer;
+}
+
 .box {
 	position: relative;
 	margin: 15px;
 	height: 250px;
 	width: 250px;
 	display: inline-block;
+	cursor: pointer;
 }
 
 h1 {
@@ -253,6 +258,10 @@ footer {
 #hello {
 	margin-bottom: .6em;
 	font-size: 
+}
+
+.filters {
+	cursor: pointer;
 }
 
 .flex_container {
