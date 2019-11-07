@@ -1,8 +1,8 @@
 #bots_container {
 	overflow: hidden;
 	position: relative;
-	height: inherit;
-	width: inherit;
+	height: 250px;
+	width: 250px;
 	background: steelblue;
 	border: 10px solid steelblue;
 	align-content: center;

@@ -25,7 +25,7 @@ $(document).ready(function() {
 	$('.box').click(function() {
 		blurbs.show();
 		hr.show();
-		var where_to = '#' + this.id + '_flex_container';
+		var where_to = '#' + this.id.substring(0, this.id.length-10) + '_flex_container';
 		$('html, body').animate({scrollTop: $(where_to).offset().top - 20}, 500); //$(window).height()*.25
 	});
 
