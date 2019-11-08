@@ -59,6 +59,7 @@ header {
 	font-family: Courier;
 	color: white;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 0px;
 	z-index: 2;
 }
