@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-144525485-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-144525485-1');
+	</script>
+	<!-- social media preview -->
+	<meta property="og:title" content="A traveling salesperson heuristic in NlogN time"/>
+	<meta property="og:description" content="By repurposing a common machine learning algorithm, we can get a fast solution to a notoriously difficult problem."/> 
+	<meta property="og:image" content="http://www.brownanalytics.com/tsp/thumbnail.png" />
+	<!--  -->
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="main.css">
+	<link href="https://fonts.googleapis.com/css?family=Alfa+Slab+One|Open+Sans" rel="stylesheet">
+	<title>A traveling salesperson heuristic in NlogN time</title>
+</head>
+<body>
+	<header class="shadow">
+		<div class="go_home"><a href="http://brownanalytics.com" id="go_home_link">&#171; Discover similar projects</a></div>
+		<div>Brown Analytics, LLC</div>
+	</header>
+	<div id="below_header">
+		<div id="blog_header" class="shadow">
+			<img src="img/tsp.svg" alt="" id="header_image">
+			<div class="title_container" class="shadow">
+				<div class="blog_title">A traveling salesperson heuristic in NlogN time</div>
+				<div class="blog_subtitle">By repurposing a common machine learning algorithm, we can get a fast solution to a notoriously difficult problem.</div>
+				<div class="byline"><a href="#">By Kevin McElwee</a></div>
+			</div>
+		</div>
+	<div class="blog_container">
+		<h2>
+			What’s the algorithm?
+		</h2>
+		
+		<p>
+			We can use <a target="_blank" href="https://www.youtube.com/watch?v=hDmNF9JG3lo">KMeans clustering</a> to divide our points recursively. If K = 4, we start with a square that divides all points into four quadrants. Each vertex can then be divided into four clusters, and we find the shortest path that integrates those four clusters into the existing square. The process repeats until the clusters ultimately converge into the points themselves. The KMeans algorithm is O(N), and it’s repeated an average of log<sub>K</sub>(N) times.
+		</p>
+
+		<p class="center"><img src="img/tsp.gif" alt=""></p>
+
+		<h2>
+			Is this heuristic worthwhile?
+		</h2>
+		
+		<p>
+			I ran a few tests on files from the University of Waterloo’s <a target="_blank" href="http://www.math.uwaterloo.ca/tsp/world/countries.html#CH">TSP database</a>, and this algorithm offered solutions which were often within 20 percent of the estimated lowest bound.
+		</p>
+
+		<p class="center"><img src="img/tsp1.png" alt="" width="80%"></p>
+
+		<p>
+			Though, instead of taking hours or days to complete, each were solved in less than 5 minutes. The time to complete each of these countries are plotted on the following chart:
+		</p>
+		
+		<p class="center"><img src="img/tsp2.png" alt="" width="80%"></p>
+
+		<p>
+			This algorithm has not been compared to other NlogN algorithms (suggestions welcome); however, it has been compared to the Smallest Insertion (SI) algorithm, which take N² time. Running 1000 tests on random nodes when N=100, recursive clustering is better than SI more than 59 percent of the time, despite SI taking considerably longer.
+		</p>
+
+		<p>
+			My testing can be found in <a target="_blank" href="https://github.com/kmcelwee/mediumBlog/blob/master/TSP/heuristic_performance.ipynb">this Jupyter notebook</a>.
+		</p>
+
+		<h2>Software Implementation</h2>
+		<p><a target="_blank" href="https://github.com/kmcelwee/mediumBlog/tree/master/TSP">Here is a link</a> to the code on GitHub, and here are three high-level functions the program offers:
+<!-- HTML generated using hilite.me --><div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f92672">import</span> <span style="color: #f8f8f2">recursive_clustering</span> <span style="color: #f92672">as</span> <span style="color: #f8f8f2">rc</span>
+<span style="color: #75715e"># Create 100 random points and draw solution with K = 4</span>
+<span style="color: #f8f8f2">rc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">solve_random(N</span><span style="color: #f92672">=</span><span style="color: #ae81ff">100</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">K</span><span style="color: #f92672">=</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">)</span>
+<span style="color: #75715e"># Given a numpy array, draw the solution</span>
+<span style="color: #f8f8f2">rc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">solve_array(all_nodes,</span> <span style="color: #f8f8f2">K</span><span style="color: #f92672">=</span><span style="color: #ae81ff">4</span><span style="color: #f8f8f2">)</span>
+<span style="color: #75715e"># given a two-column CSV of X and Y, draw the solution</span>
+<span style="color: #f8f8f2">rc</span><span style="color: #f92672">.</span><span style="color: #f8f8f2">solve_file(</span><span style="color: #e6db74">&#39;testFiles/usa115475.csv&#39;</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">K</span><span style="color: #f92672">=</span><span style="color: #ae81ff">5</span><span style="color: #f8f8f2">,</span> <span style="color: #f8f8f2">draw</span><span style="color: #f92672">=</span><span style="color: #f8f8f2">False)</span>
+</pre></div>
+<!-- End hilite.me -->
+	</p>
+
+		<p>All these functions return a dictionary, the tour length, and the wait time. The dictionary has the following structure:
+<!-- HTML generated using hilite.me -->
+<div style="background: #272822; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #f8f8f2">path_d</span> <span style="color: #f92672">=</span> <span style="color: #f8f8f2">{</span>
+	     <span style="color: #f8f8f2">ID0:</span> <span style="color: #f8f8f2">{</span>
+	          <span style="color: #e6db74">&#39;center&#39;</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">[X,</span> <span style="color: #f8f8f2">Y],</span>
+	          <span style="color: #e6db74">&#39;connections&#39;</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">[ID#, ID#],</span>
+	          <span style="color: #e6db74">&#39;subnodes&#39;</span><span style="color: #f8f8f2">:</span> <span style="color: #f8f8f2">[[x,</span> <span style="color: #f8f8f2">y]</span><span style="color: #f92672">....</span><span style="color: #f8f8f2">[x,</span> <span style="color: #f8f8f2">y]],</span>
+	          <span style="color: #e6db74">&#39;hasBeenSplit&#39;</span><span style="color: #f8f8f2">:</span> <span style="color: #ae81ff">True</span>
+	     <span style="color: #f8f8f2">},</span>
+	     <span style="color: #f8f8f2">ID1:</span> <span style="color: #f92672">...</span>
+	<span style="color: #f8f8f2">}</span>
+</pre></div>
+<!-- End hilite.me -->
+		</p>
+
+		<p>
+			This dictionary contains all clusters and their subnodes. If you wanted to access only the final nodes, you’d look only for keys whose subnodes list has a length one or haven’t been split. Or you can go to the last ID and follow the connections in a circle. Suggestions for better implementations are welcome.
+		</p>
+
+		<h2>What value of K should I use?</h2>
+		<p>
+			The algorithm considers all possible permutations of K when it integrates the new K clusters into the existing shape. With that in mind, a larger K can very quickly become slower than N². For points between 1,000 and 10,000, K = 5 seems to offer the shortest path. K = 5 is also consistently faster than all other K values, probably because it’s 120 permutations are outweighed by a faster convergence.
+		</p>
+
+		<h2>Can we make it better?</h2>
+		<p>
+			Developing some kind of statistical model to find the optimal value of K given the number of subnodes might be a straightforward, worthwhile area of research going forward. Currently K is static throughout the whole process; however, my intuition tells me that altering K as a function of its subnodes would decrease tour lengths and runtime.
+		</p>
+
+		<p>
+			Additionally, although I haven’t yet run any tests, this algorithm would theoretically run in NlogK(N) time on higher-dimensional TSP as well.
+		</p>
+		<br>
+		<div id="bottom_material">
+			<p class="center">
+				<img src="../img/divider.svg" alt="" width="100px">
+			</p>
+			<br>
+			<p class="center">
+				<em>Originally <a href="https://medium.com/@kevinrmcelwee/a-traveling-salesperson-heuristic-in-nlogn-time-5201bcd347e6" target="_blank">published on Medium</a> on March 9, 2019. Updated ###</em>
+			</p>
+			
+			<p class="center"><em>Questions? Mistakes? Feel free to <a href="mailto:kevinrmcelwee@gmail.com">email me</a>. Check out my <a target="_blank" href="https://www.kevinrmcelwee.ml">other projects</a>.</em></p>
+		</div>
+	</div>
+	</div>
+	<footer class="shadow">
+			<div id="contact_container">
+				<a target="_blank" href="https://github.com/kmcelwee"><img class="icon" src="../img/icons/github-brands.svg" width="30px" alt=""></a>
+				<a target="_blank" href="https://www.linkedin.com/in/kevin-mcelwee/"><img class="icon" src="../img/icons/linkedin-brands.svg" width="30px" alt=""></a>
+				<a target="_blank" href="https://medium.com/@kevinrmcelwee"><img class="icon" src="../img/icons/medium-brands.svg" width="30px" alt=""></a>
+				<div id="llc">Brown Analytics, LLC</div>
+			</div>
+	</footer>
+</body>
+</html>
