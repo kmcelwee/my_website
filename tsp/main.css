@@ -34,6 +34,7 @@ a:hover:after {
 
 .center {
 	text-align: center;
+	margin-left: -50px;
 }
 
 .byline {
@@ -85,6 +86,7 @@ header {
 
 .blog_container {
 	max-width: 750px;
+	min-width: 650px;
 	margin: 50px auto;
 	margin-bottom: calc(100px - var(--header-height));
 	font-family: 'Open Sans', sans-serif;
@@ -146,6 +148,12 @@ footer {
 	position: relative;
 	background: black;
 	z-index: 3;
+}
+
+#gif {
+	width: 80%;
+	border-radius: 5px;
+	/*box-shadow: 0px 0px 5px;*/
 }
 
 #header_image {
