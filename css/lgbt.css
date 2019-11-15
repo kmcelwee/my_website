@@ -10,6 +10,11 @@
 #lgbt_container img {
 	width: 100%;
 }
+
+#lgbt_container:hover img {
+	opacity: .7;
+}
+
 /*
 #lgbt_flag {
 	width: 100%;
@@ -42,9 +47,9 @@
 }*/
 
 /*Hack. not sure why hover on lgbt_container isn't working*/
-#lgbt:hover #lgbt_container {
+/*#lgbt:hover #lgbt_container {
 	opacity: .7;
-}
+}*/
 
 /*#home-mask {
 	position: absolute;
