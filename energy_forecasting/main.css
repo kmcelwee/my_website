@@ -231,6 +231,7 @@ a:hover:after {
 #top {
 	width: 50px;
 	position: sticky;
+	position: -webkit-sticky;
 	top: 15px;
 	left: 15px;
 	cursor: pointer;
