@@ -14,7 +14,8 @@ font-family: 'Open Sans', sans-serif;
 }
 
 ul {
-	padding-inline-start: 0px;
+	-webkit-padding-start: 0px;
+	        padding-inline-start: 0px;
 }
 
 .hr {
@@ -27,9 +28,12 @@ ul {
 }
 
 header {
+	display: -webkit-box;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
 	position: relative;
 	height: 370px; 
 	width: 100%;
@@ -66,11 +70,13 @@ header {
 	cursor: pointer;
 	box-shadow: 5px 5px 5px #aaa;
 	border-radius: 5px;
+	-webkit-transition: 250ms;
 	transition: 250ms;
 }
 
 .box:hover {
-	transform: scale(.99);
+	-webkit-transform: scale(.99);
+	        transform: scale(.99);
 	box-shadow: none;
 }
 
@@ -90,7 +96,8 @@ h1 {
 }
 
 #projects_header_content {
-	transform: translateY(20%);
+	-webkit-transform: translateY(20%);
+	        transform: translateY(20%);
 	text-align: center;
 	display: inline;
 	margin: 50px;
@@ -182,9 +189,11 @@ h1 {
 
 #projects {
 	width: 100%;
+	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
 	min-height: 300px;
 	margin-top: 50px;
 	margin-bottom: 60px;
@@ -207,6 +216,7 @@ a:after {
 	opacity: .2;
 	position: absolute;
 	background: var(--color_scheme);
+	-webkit-transition: 250ms;
 	transition: 250ms;
 }
 
@@ -228,9 +238,12 @@ a:hover:after {
 }
 
 footer {
+	display: -webkit-box;
 	display: flex;
-	align-items: center;
-	justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
 	position: relative;
 	height: 120px;
 	width: 100%;
@@ -261,10 +274,13 @@ footer {
 }
 
 .flex_container {
+	display: -webkit-box;
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
-	align-items: center;
+	-webkit-box-pack: center;
+	        justify-content: center;
+	-webkit-box-align: center;
+	        align-items: center;
 }
 
 .flex_container div {
