@@ -4,7 +4,7 @@ font-family: 'Open Sans', sans-serif;
 */
 
 * {
-	--color_scheme: green;
+	--color_scheme: rgb(47, 92, 55);
 	--color_scheme2: white;
 }
 
